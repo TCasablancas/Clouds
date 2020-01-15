@@ -99,11 +99,13 @@
 		EF5723BB23CE4FD600492384 /* Clouds */ = {
 			isa = PBXGroup;
 			children = (
+				EFBB816C23CFA17700FB637F /* Assets */,
+				EFBB816E23CFA18600FB637F /* Controllers */,
+				EFBB816B23CFA16E00FB637F /* fonts */,
+				EFBB816F23CFA19100FB637F /* Utils */,
+				EFBB816D23CFA18000FB637F /* Views */,
 				EF5723BC23CE4FD600492384 /* AppDelegate.swift */,
 				EF5723BE23CE4FD600492384 /* SceneDelegate.swift */,
-				EF5723C023CE4FD600492384 /* ViewController.swift */,
-				EF5723C223CE4FD600492384 /* Main.storyboard */,
-				EF5723C523CE4FD700492384 /* Assets.xcassets */,
 				EF5723C723CE4FD700492384 /* LaunchScreen.storyboard */,
 				EF5723CA23CE4FD700492384 /* Info.plist */,
 			);
@@ -126,6 +128,68 @@
 				EF5723E023CE4FD700492384 /* Info.plist */,
 			);
 			path = CloudsUITests;
+			sourceTree = "<group>";
+		};
+		EFBB816B23CFA16E00FB637F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		EFBB816C23CFA17700FB637F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EF5723C523CE4FD700492384 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EFBB816D23CFA18000FB637F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF5723C223CE4FD600492384 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFBB816E23CFA18600FB637F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF5723C023CE4FD600492384 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFBB816F23CFA19100FB637F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EFBB817023CFA1FF00FB637F /* Constants */,
+				EFBB817123CFA20700FB637F /* Extensions */,
+				EFBB817223CFA20E00FB637F /* Theme */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EFBB817023CFA1FF00FB637F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		EFBB817123CFA20700FB637F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFBB817223CFA20E00FB637F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
