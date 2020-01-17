@@ -31,6 +31,8 @@
 		EFBB818823D2028700FB637F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818723D2028700FB637F /* Theme.swift */; };
 		EFBB818A23D211F900FB637F /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818923D211F900FB637F /* Colors+Extensions.swift */; };
 		EFBB818C23D218C700FB637F /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818B23D218C700FB637F /* Gradients.swift */; };
+		EFBB818E23D22AAD00FB637F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBB818D23D22AAD00FB637F /* Home.storyboard */; };
+		EFBB819023D22AC600FB637F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818F23D22AC600FB637F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		EFBB818723D2028700FB637F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		EFBB818923D211F900FB637F /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
 		EFBB818B23D218C700FB637F /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		EFBB818D23D22AAD00FB637F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EFBB818F23D22AC600FB637F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FB32C7E7B74270422728480E /* Pods_Clouds_CloudsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clouds_CloudsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD848E971C16B752A529659F /* Pods-Clouds-CloudsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clouds-CloudsUITests.release.xcconfig"; path = "Target Support Files/Pods-Clouds-CloudsUITests/Pods-Clouds-CloudsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5723C223CE4FD600492384 /* Main.storyboard */,
+				EFBB818D23D22AAD00FB637F /* Home.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5723C023CE4FD600492384 /* ViewController.swift */,
+				EFBB818F23D22AC600FB637F /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5723C923CE4FD700492384 /* LaunchScreen.storyboard in Resources */,
+				EFBB818E23D22AAD00FB637F /* Home.storyboard in Resources */,
 				EFBB818023D0E18100FB637F /* Rubik-Italic.otf in Resources */,
 				EFBB818223D0E18100FB637F /* Rubik-Bold.otf in Resources */,
 				EF5723C623CE4FD700492384 /* Assets.xcassets in Resources */,
@@ -523,6 +530,7 @@
 				EFBB817623CFADCF00FB637F /* Constants.swift in Sources */,
 				EFBB817823CFAE0200FB637F /* SetupUI.swift in Sources */,
 				EF5723C123CE4FD600492384 /* ViewController.swift in Sources */,
+				EFBB819023D22AC600FB637F /* HomeViewController.swift in Sources */,
 				EFBB817423CFADAC00FB637F /* UIBaseViewController.swift in Sources */,
 				EF5723BD23CE4FD600492384 /* AppDelegate.swift in Sources */,
 				EF5723BF23CE4FD600492384 /* SceneDelegate.swift in Sources */,
