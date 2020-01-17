@@ -60,5 +60,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Rubik-Bold.otf</string>
+		<string>Rubik-Italic.otf</string>
+		<string>Rubik-Light.otf</string>
+		<string>Rubik-LightItalic.otf</string>
+		<string>Rubik-Medium.otf</string>
+		<string>Rubik-MediumItalic.otf</string>
+	</array>
+	<key>NSLocationUsageDescription</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 </dict>
 </plist>

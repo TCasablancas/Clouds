@@ -19,10 +19,12 @@ struct Constants {
         
         struct Hex {
             
-            static let white = "#fff"
-            
-            static let colorPrimaryGray = ""
-            
+            static let white            = "#FFFFF"
+            static let gray             = "#F0EBF0"
+            static let primaryGreen     = "#40F27E"
+            static let primaryPurple    = "#7B3EB3"
+            static let primaryOrange    = "#FFC366"
+            static let primaryBrown     = "#B38136"
         }
     }
 }
