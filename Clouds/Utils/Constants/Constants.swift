@@ -12,6 +12,8 @@ struct Constants {
     
     struct Segues {
         
+        static let MAIN = "MAIN"
+        static let FIRST_LOCATION = "FIRST_LOCATION"
         static let HOME = "HOME_SEGUE"
     }
     
@@ -25,6 +27,7 @@ struct Constants {
             static let primaryPurple    = "#7B3EB3"
             static let primaryOrange    = "#FFC366"
             static let primaryBrown     = "#B38136"
+            static let fbColor          = "#3B5998"
         }
     }
 }

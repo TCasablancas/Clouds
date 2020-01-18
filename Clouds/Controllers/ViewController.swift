@@ -7,15 +7,39 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class ViewController: UIBaseViewController {
 
+    @IBOutlet weak var lbMain: UILabel!
+    @IBOutlet weak var lbText: UILabel!
+    @IBOutlet weak var btnCadastro: UIButton!
+    @IBOutlet weak var btnFacebook: UIButton!
+    @IBOutlet weak var btnLater: UIButton!
+    @IBOutlet weak var imgWeather: UIImageView!
+    
     override func viewDidLoad() {
         self.setupUI()
         self.setupTexts()
+        
+        self.btnLater.addTarget(self, action: #selector(next(_:)), for: .touchDown)
+        
     }
+    
+}
 
+//MARK: Functions
 
+extension ViewController {
+    
+    @objc func next(_ sender: UIButton) {
+        self.performSegue(withIdentifier: Constants.Segues.FIRST_LOCATION, sender: nil)
+    }
+    
+    func weatherImg() {
+        
+       
+    }
 }
 
 extension ViewController : SetupUI {
@@ -25,6 +49,11 @@ extension ViewController : SetupUI {
     }
     
     func setupUI() {
-        Theme.default.backgroundDefault(self)
+        Theme.default.backgroundGray(self)
+        Theme.default.textMain(self.lbMain)
+        Theme.default.textCalling(self.lbText)
+        Theme.default.btnPurple(self.btnCadastro)
+        Theme.default.btnFacebook(self.btnFacebook)
+        
     }
 }

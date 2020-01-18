@@ -10,7 +10,9 @@ target 'Clouds' do
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.4'
   pod 'RealmSwift'
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'SwiftGifOrigin', '~> 1.7.0'
 
   target 'CloudsTests' do
     inherit! :search_paths

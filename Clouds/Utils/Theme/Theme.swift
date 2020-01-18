@@ -21,11 +21,12 @@ class Theme {
         static let purple   = UIColor(hexString: Constants.Colors.Hex.primaryPurple)
         static let orange   = UIColor(hexString: Constants.Colors.Hex.primaryOrange)
         static let brown    = UIColor(hexString: Constants.Colors.Hex.primaryBrown)
+        static let facebook = UIColor(hexString: Constants.Colors.Hex.fbColor)
         
         //Backgrounds
         
         static func backgroundDefault(_ viewController: UIViewController) {
-            viewController.view.backgroundColor = Theme.default.gray
+            viewController.view.backgroundColor = Theme.default.primary
         }
         
         static func backgroundGray(_ viewController: UIViewController) {
@@ -38,6 +39,47 @@ class Theme {
         
         static func backgroundGradient(_ viewController: UIViewController) {
             viewController.view.setGradientBackground(firstColor: Theme.default.purple, secondColor: Theme.default.primary)
+        }
+        
+        //Texts
+        
+        static func textMain(_ label: UILabel) {
+            
+            label.textColor = Theme.default.purple
+            label.font = UIFont(name: Font.rubikLight.rawValue, size:28)
+            label.adjustsFontForContentSizeCategory = true
+        }
+        
+        static func textCalling(_ label: UILabel) {
+            
+            label.textColor = Theme.default.purple
+            label.font = UIFont(name: Font.rubikMedium.rawValue, size:16)
+            label.adjustsFontForContentSizeCategory = true
+        }
+        
+        //Buttons
+        
+        static func btnPurple(_ button: UIButton, radius: CGFloat = 30) {
+            
+            button.borderRadiusButton(radius: radius)
+            button.tintColor = Theme.default.white
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
+            button.backgroundColor = Theme.default.purple
+            button.titleLabel?.font = UIFont(name: Font.rubikMedium.rawValue, size:16)
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
+            //button.shadowButton()
+        }
+        
+        static func btnFacebook(_ button: UIButton, radius: CGFloat = 30) {
+            
+            button.borderRadiusButton(radius: radius)
+            button.tintColor = Theme.default.white
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
+            button.backgroundColor = Theme.default.facebook
+            button.titleLabel?.font = UIFont(name: Font.rubikMedium.rawValue, size:16)
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
         }
     }
 }

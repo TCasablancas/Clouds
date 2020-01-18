@@ -33,6 +33,10 @@
 		EFBB818C23D218C700FB637F /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818B23D218C700FB637F /* Gradients.swift */; };
 		EFBB818E23D22AAD00FB637F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBB818D23D22AAD00FB637F /* Home.storyboard */; };
 		EFBB819023D22AC600FB637F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818F23D22AC600FB637F /* HomeViewController.swift */; };
+		EFFC93FA23D238C300F177FD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC93F923D238C300F177FD /* Button.swift */; };
+		EFFC93FC23D2468E00F177FD /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC93FB23D2468E00F177FD /* ChooseLocationViewController.swift */; };
+		EFFC93FE23D2890800F177FD /* SwiftGifOrigin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */; };
+		EFFC93FF23D2890800F177FD /* SwiftGifOrigin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,20 @@
 			remoteInfo = Clouds;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EFFC940023D2890800F177FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EFFC93FF23D2890800F177FD /* SwiftGifOrigin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33258202BE1879F8FC3A4535 /* Pods-CloudsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudsTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudsTests/Pods-CloudsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +107,9 @@
 		EFBB818B23D218C700FB637F /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		EFBB818D23D22AAD00FB637F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EFBB818F23D22AC600FB637F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EFFC93F923D238C300F177FD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		EFFC93FB23D2468E00F177FD /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
+		EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB32C7E7B74270422728480E /* Pods_Clouds_CloudsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clouds_CloudsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD848E971C16B752A529659F /* Pods-Clouds-CloudsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clouds-CloudsUITests.release.xcconfig"; path = "Target Support Files/Pods-Clouds-CloudsUITests/Pods-Clouds-CloudsUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0133FAB768D8115A37B2402 /* Pods_Clouds.framework in Frameworks */,
+				EFFC93FE23D2890800F177FD /* SwiftGifOrigin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +146,7 @@
 		8DE3D0CD8110BF9059F4640D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */,
 				DBCDBF76588ED22CC9356AC4 /* Pods_Clouds.framework */,
 				FB32C7E7B74270422728480E /* Pods_Clouds_CloudsUITests.framework */,
 				9F59876DD28B4B06F28A5BEC /* Pods_CloudsTests.framework */,
@@ -235,6 +258,7 @@
 			children = (
 				EF5723C023CE4FD600492384 /* ViewController.swift */,
 				EFBB818F23D22AC600FB637F /* HomeViewController.swift */,
+				EFFC93FB23D2468E00F177FD /* ChooseLocationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +297,7 @@
 				EFBB818523D1FF8000FB637F /* Fonts.swift */,
 				EFBB818723D2028700FB637F /* Theme.swift */,
 				EFBB818B23D218C700FB637F /* Gradients.swift */,
+				EFFC93F923D238C300F177FD /* Button.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -289,6 +314,8 @@
 				EF5723B623CE4FD600492384 /* Frameworks */,
 				EF5723B723CE4FD600492384 /* Resources */,
 				E5DED80111A784B937F455C0 /* [CP] Embed Pods Frameworks */,
+				B0ABBAFCBBDC123D4ABD71E1 /* [CP] Copy Pods Resources */,
+				EFFC940023D2890800F177FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +354,7 @@
 				EF5723D723CE4FD700492384 /* Frameworks */,
 				EF5723D823CE4FD700492384 /* Resources */,
 				05EB87B718535BA20BD4D688 /* [CP] Embed Pods Frameworks */,
+				8C4E26E86767EDD7347A112E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,6 +483,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C4E26E86767EDD7347A112E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clouds-CloudsUITests/Pods-Clouds-CloudsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clouds-CloudsUITests/Pods-Clouds-CloudsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clouds-CloudsUITests/Pods-Clouds-CloudsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E60648100F398BB0979CEDF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +520,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0ABBAFCBBDC123D4ABD71E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clouds/Pods-Clouds-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clouds/Pods-Clouds-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clouds/Pods-Clouds-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E5DED80111A784B937F455C0 /* [CP] Embed Pods Frameworks */ = {
@@ -528,8 +590,10 @@
 				EFBB818623D1FF8000FB637F /* Fonts.swift in Sources */,
 				EFBB818823D2028700FB637F /* Theme.swift in Sources */,
 				EFBB817623CFADCF00FB637F /* Constants.swift in Sources */,
+				EFFC93FC23D2468E00F177FD /* ChooseLocationViewController.swift in Sources */,
 				EFBB817823CFAE0200FB637F /* SetupUI.swift in Sources */,
 				EF5723C123CE4FD600492384 /* ViewController.swift in Sources */,
+				EFFC93FA23D238C300F177FD /* Button.swift in Sources */,
 				EFBB819023D22AC600FB637F /* HomeViewController.swift in Sources */,
 				EFBB817423CFADAC00FB637F /* UIBaseViewController.swift in Sources */,
 				EF5723BD23CE4FD600492384 /* AppDelegate.swift in Sources */,
