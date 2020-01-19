@@ -12,8 +12,7 @@ target 'Clouds' do
   pod 'RealmSwift'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'SwiftGifOrigin', '~> 1.7.0'
-
+  
   target 'CloudsTests' do
     inherit! :search_paths
     # Pods for testing

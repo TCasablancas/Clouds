@@ -8,12 +8,11 @@ PODS:
   - GooglePlaces (3.7.0):
     - GoogleMaps/Base (= 3.7.0)
   - ObjectMapper (3.5.1)
-  - Realm (4.3.0):
-    - Realm/Headers (= 4.3.0)
-  - Realm/Headers (4.3.0)
-  - RealmSwift (4.3.0):
-    - Realm (= 4.3.0)
-  - SwiftGifOrigin (1.7.0)
+  - Realm (4.3.1):
+    - Realm/Headers (= 4.3.1)
+  - Realm/Headers (4.3.1)
+  - RealmSwift (4.3.1):
+    - Realm (= 4.3.1)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -22,7 +21,6 @@ DEPENDENCIES:
   - GooglePlaces
   - ObjectMapper (~> 3.4)
   - RealmSwift
-  - SwiftGifOrigin (~> 1.7.0)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -33,7 +31,6 @@ SPEC REPOS:
     - ObjectMapper
     - Realm
     - RealmSwift
-    - SwiftGifOrigin
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -41,11 +38,10 @@ SPEC CHECKSUMS:
   GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
   GooglePlaces: a62077320f9d64239245af63aa1aa136393ebeb6
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
-  RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
-  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  Realm: 31dc40934081ef740f60feedc46d88473cbfeb40
+  RealmSwift: b5199e9a41f67b99f51acf6874a6166f5fbe93d1
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: df56cfb8391fe500f122c3d9ca42c5fbf2401ee0
+PODFILE CHECKSUM: 4e14795d356da022db9ab2d6e0e3547100d6b6f2
 
 COCOAPODS: 1.8.4
