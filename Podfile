@@ -12,6 +12,8 @@ target 'Clouds' do
   pod 'RealmSwift'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'Gifu'
   
   target 'CloudsTests' do
     inherit! :search_paths

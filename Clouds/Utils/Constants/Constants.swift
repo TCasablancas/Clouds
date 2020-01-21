@@ -13,7 +13,7 @@ struct Constants {
     struct Segues {
         
         static let MAIN = "MAIN"
-        static let FIRST_LOCATION = "FIRST_LOCATION"
+        static let LOCATION = "LOCATION"
         static let HOME = "HOME_SEGUE"
     }
     

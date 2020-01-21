@@ -21,29 +21,27 @@ class ViewController: UIBaseViewController {
         self.setupUI()
         self.setupTexts()
         
-        self.btnLater.addTarget(self, action: #selector(next(_:)), for: .touchDown)
-        
     }
     
 }
 
 //MARK: Functions
-
+//MARK: Navigation
 extension ViewController {
     
-    @objc func next(_ sender: UIButton) {
-        self.performSegue(withIdentifier: Constants.Segues.FIRST_LOCATION, sender: nil)
+    @IBAction func next(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: Constants.Segues.MAIN, sender: nil)
     }
     
-    func weatherImg() {
-        
-       
-    }
+    
 }
 
 extension ViewController : SetupUI {
     
     func setupTexts() {
+        self.lbMain.text = "Olá, seja bem vindo ao Clouds: o seu assistente climático."
+        self.lbText.text = "Para uma melhor experiência, gostaria de se logar, ou criar um cadastro?"
         
     }
     

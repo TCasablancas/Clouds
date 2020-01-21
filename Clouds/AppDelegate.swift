@@ -9,20 +9,27 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import GooglePlacePicker
+
+let googleApiKey = "AIzaSyCY0cCfHbyEZYPTOysqihCqa_jjQ9iFyxA"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var navigationController: UINavigationController?
+    var orientationLock = UIInterfaceOrientationMask.portrait
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        GMSServices.provideAPIKey("AIzaSyBlKOhtEOVISKzoOXwVxRenRr793pdbGy4")
-        GMSPlacesClient.provideAPIKey("AIzaSyBlKOhtEOVISKzoOXwVxRenRr793pdbGy4")
+        GMSServices.provideAPIKey(googleApiKey)
+        GMSPlacesClient.provideAPIKey(googleApiKey)
         
         return true
     }
+    
 
     // MARK: UISceneSession Lifecycle
 
@@ -37,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
 
 }
 

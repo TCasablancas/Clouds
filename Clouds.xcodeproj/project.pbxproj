@@ -18,6 +18,11 @@
 		EF5723C923CE4FD700492384 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5723C723CE4FD700492384 /* LaunchScreen.storyboard */; };
 		EF5723D423CE4FD700492384 /* CloudsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5723D323CE4FD700492384 /* CloudsTests.swift */; };
 		EF5723DF23CE4FD700492384 /* CloudsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5723DE23CE4FD700492384 /* CloudsUITests.swift */; };
+		EFAB8EBE23D6380D0089A0E2 /* CollectionsViewCells+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB8EBD23D6380D0089A0E2 /* CollectionsViewCells+Extension.swift */; };
+		EFAB8EC223D638410089A0E2 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB8EC023D638410089A0E2 /* WeatherCell.swift */; };
+		EFAB8EC323D638410089A0E2 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFAB8EC123D638410089A0E2 /* WeatherCell.xib */; };
+		EFAB8EC523D66C570089A0E2 /* DarkSkyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB8EC423D66C570089A0E2 /* DarkSkyService.swift */; };
+		EFAB8EC723D66E9A0089A0E2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAB8EC623D66E9A0089A0E2 /* WeatherData.swift */; };
 		EFBB817423CFADAC00FB637F /* UIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB817323CFADAC00FB637F /* UIBaseViewController.swift */; };
 		EFBB817623CFADCF00FB637F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB817523CFADCF00FB637F /* Constants.swift */; };
 		EFBB817823CFAE0200FB637F /* SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB817723CFAE0200FB637F /* SetupUI.swift */; };
@@ -33,10 +38,9 @@
 		EFBB818C23D218C700FB637F /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818B23D218C700FB637F /* Gradients.swift */; };
 		EFBB818E23D22AAD00FB637F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBB818D23D22AAD00FB637F /* Home.storyboard */; };
 		EFBB819023D22AC600FB637F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBB818F23D22AC600FB637F /* HomeViewController.swift */; };
+		EFC60C7823D49CD500447A9E /* ChooseLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC60C7723D49CD500447A9E /* ChooseLocation.storyboard */; };
 		EFFC93FA23D238C300F177FD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC93F923D238C300F177FD /* Button.swift */; };
 		EFFC93FC23D2468E00F177FD /* ChooseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC93FB23D2468E00F177FD /* ChooseLocationViewController.swift */; };
-		EFFC93FE23D2890800F177FD /* SwiftGifOrigin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */; };
-		EFFC93FF23D2890800F177FD /* SwiftGifOrigin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,20 +59,6 @@
 			remoteInfo = Clouds;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		EFFC940023D2890800F177FD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EFFC93FF23D2890800F177FD /* SwiftGifOrigin.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33258202BE1879F8FC3A4535 /* Pods-CloudsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudsTests.debug.xcconfig"; path = "Target Support Files/Pods-CloudsTests/Pods-CloudsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +82,11 @@
 		EF5723DA23CE4FD700492384 /* CloudsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5723DE23CE4FD700492384 /* CloudsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsUITests.swift; sourceTree = "<group>"; };
 		EF5723E023CE4FD700492384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAB8EBD23D6380D0089A0E2 /* CollectionsViewCells+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionsViewCells+Extension.swift"; sourceTree = "<group>"; };
+		EFAB8EC023D638410089A0E2 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		EFAB8EC123D638410089A0E2 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		EFAB8EC423D66C570089A0E2 /* DarkSkyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyService.swift; sourceTree = "<group>"; };
+		EFAB8EC623D66E9A0089A0E2 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		EFBB817323CFADAC00FB637F /* UIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBaseViewController.swift; sourceTree = "<group>"; };
 		EFBB817523CFADCF00FB637F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EFBB817723CFAE0200FB637F /* SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupUI.swift; sourceTree = "<group>"; };
@@ -107,6 +102,7 @@
 		EFBB818B23D218C700FB637F /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		EFBB818D23D22AAD00FB637F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EFBB818F23D22AC600FB637F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EFC60C7723D49CD500447A9E /* ChooseLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseLocation.storyboard; sourceTree = "<group>"; };
 		EFFC93F923D238C300F177FD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		EFFC93FB23D2468E00F177FD /* ChooseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationViewController.swift; sourceTree = "<group>"; };
 		EFFC93FD23D2890800F177FD /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftGifOrigin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +116,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0133FAB768D8115A37B2402 /* Pods_Clouds.framework in Frameworks */,
-				EFFC93FE23D2890800F177FD /* SwiftGifOrigin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +187,7 @@
 		EF5723BB23CE4FD600492384 /* Clouds */ = {
 			isa = PBXGroup;
 			children = (
+				EFAB8EBF23D6382C0089A0E2 /* Cells */,
 				EFBB816C23CFA17700FB637F /* Assets */,
 				EFBB816E23CFA18600FB637F /* Controllers */,
 				EFBB816B23CFA16E00FB637F /* fonts */,
@@ -223,6 +219,15 @@
 			path = CloudsUITests;
 			sourceTree = "<group>";
 		};
+		EFAB8EBF23D6382C0089A0E2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB8EC023D638410089A0E2 /* WeatherCell.swift */,
+				EFAB8EC123D638410089A0E2 /* WeatherCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		EFBB816B23CFA16E00FB637F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +254,7 @@
 			children = (
 				EF5723C223CE4FD600492384 /* Main.storyboard */,
 				EFBB818D23D22AAD00FB637F /* Home.storyboard */,
+				EFC60C7723D49CD500447A9E /* ChooseLocation.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 				EF5723C023CE4FD600492384 /* ViewController.swift */,
 				EFBB818F23D22AC600FB637F /* HomeViewController.swift */,
 				EFFC93FB23D2468E00F177FD /* ChooseLocationViewController.swift */,
+				EFAB8EC423D66C570089A0E2 /* DarkSkyService.swift */,
+				EFAB8EC623D66E9A0089A0E2 /* WeatherData.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				EFBB818923D211F900FB637F /* Colors+Extensions.swift */,
+				EFAB8EBD23D6380D0089A0E2 /* CollectionsViewCells+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,7 +324,6 @@
 				EF5723B723CE4FD600492384 /* Resources */,
 				E5DED80111A784B937F455C0 /* [CP] Embed Pods Frameworks */,
 				B0ABBAFCBBDC123D4ABD71E1 /* [CP] Copy Pods Resources */,
-				EFFC940023D2890800F177FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,8 +430,10 @@
 				EFBB818323D0E18100FB637F /* Rubik-LightItalic.otf in Resources */,
 				EFBB818423D0E18100FB637F /* Rubik-Medium.otf in Resources */,
 				EFBB817F23D0E18100FB637F /* Rubik-MediumItalic.otf in Resources */,
+				EFAB8EC323D638410089A0E2 /* WeatherCell.xib in Resources */,
 				EFBB818123D0E18100FB637F /* Rubik-Light.otf in Resources */,
 				EF5723C423CE4FD600492384 /* Main.storyboard in Resources */,
+				EFC60C7823D49CD500447A9E /* ChooseLocation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +598,7 @@
 				EFBB818A23D211F900FB637F /* Colors+Extensions.swift in Sources */,
 				EFBB818C23D218C700FB637F /* Gradients.swift in Sources */,
 				EFBB818623D1FF8000FB637F /* Fonts.swift in Sources */,
+				EFAB8EC523D66C570089A0E2 /* DarkSkyService.swift in Sources */,
 				EFBB818823D2028700FB637F /* Theme.swift in Sources */,
 				EFBB817623CFADCF00FB637F /* Constants.swift in Sources */,
 				EFFC93FC23D2468E00F177FD /* ChooseLocationViewController.swift in Sources */,
@@ -595,8 +606,11 @@
 				EF5723C123CE4FD600492384 /* ViewController.swift in Sources */,
 				EFFC93FA23D238C300F177FD /* Button.swift in Sources */,
 				EFBB819023D22AC600FB637F /* HomeViewController.swift in Sources */,
+				EFAB8EBE23D6380D0089A0E2 /* CollectionsViewCells+Extension.swift in Sources */,
+				EFAB8EC223D638410089A0E2 /* WeatherCell.swift in Sources */,
 				EFBB817423CFADAC00FB637F /* UIBaseViewController.swift in Sources */,
 				EF5723BD23CE4FD600492384 /* AppDelegate.swift in Sources */,
+				EFAB8EC723D66E9A0089A0E2 /* WeatherData.swift in Sources */,
 				EF5723BF23CE4FD600492384 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

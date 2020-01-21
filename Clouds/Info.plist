@@ -18,8 +18,23 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationUsageDescription</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Ao acessar sua localização conseguimos pegar os dados do clima.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Rubik-Bold.otf</string>
+		<string>Rubik-Italic.otf</string>
+		<string>Rubik-Light.otf</string>
+		<string>Rubik-LightItalic.otf</string>
+		<string>Rubik-Medium.otf</string>
+		<string>Rubik-MediumItalic.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -60,18 +75,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Rubik-Bold.otf</string>
-		<string>Rubik-Italic.otf</string>
-		<string>Rubik-Light.otf</string>
-		<string>Rubik-LightItalic.otf</string>
-		<string>Rubik-Medium.otf</string>
-		<string>Rubik-MediumItalic.otf</string>
-	</array>
-	<key>NSLocationUsageDescription</key>
-	<string></string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 </dict>
 </plist>

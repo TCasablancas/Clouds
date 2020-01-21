@@ -37,6 +37,10 @@ class Theme {
             viewController.view.backgroundColor = Theme.default.white
         }
         
+        static func backgroundPurple(_ viewController: UIViewController) {
+            viewController.view.backgroundColor = Theme.default.purple
+        }
+        
         static func backgroundGradient(_ viewController: UIViewController) {
             viewController.view.setGradientBackground(firstColor: Theme.default.purple, secondColor: Theme.default.primary)
         }
@@ -50,6 +54,13 @@ class Theme {
             label.adjustsFontForContentSizeCategory = true
         }
         
+        static func textGray(_ label: UILabel) {
+            
+            label.textColor = Theme.default.gray
+            label.font = UIFont(name: Font.rubikLight.rawValue, size:28)
+            label.adjustsFontForContentSizeCategory = true
+        }
+        
         static func textCalling(_ label: UILabel) {
             
             label.textColor = Theme.default.purple
@@ -57,7 +68,43 @@ class Theme {
             label.adjustsFontForContentSizeCategory = true
         }
         
+        static func textLocation(_ label: UILabel) {
+            
+            label.textColor = Theme.default.white
+            label.font = UIFont(name: Font.rubikLight.rawValue, size:13)
+            label.adjustsFontForContentSizeCategory = true
+        }
+        
+        static func textTemperature(_ label: UILabel) {
+            
+            label.textColor = Theme.default.white
+            label.font = UIFont(name: Font.rubikLight.rawValue, size:64)
+            label.adjustsFontForContentSizeCategory = true
+        }
+        
         //Buttons
+        
+        static func btnGreen(_ button: UIButton, radius: CGFloat = 30) {
+            
+            button.borderRadiusButton(radius: radius)
+            button.tintColor = Theme.default.white
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
+            button.backgroundColor = Theme.default.primary
+            button.titleLabel?.font = UIFont(name: Font.rubikMedium.rawValue, size:16)
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
+        }
+        
+        static func btnGray(_ button: UIButton, radius: CGFloat = 30) {
+            
+            button.borderRadiusButton(radius: radius)
+            button.tintColor = Theme.default.white
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
+            button.backgroundColor = Theme.default.gray
+            button.titleLabel?.font = UIFont(name: Font.rubikMedium.rawValue, size:16)
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
+        }
         
         static func btnPurple(_ button: UIButton, radius: CGFloat = 30) {
             
